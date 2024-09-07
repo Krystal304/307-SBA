@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="styles.css">
     <title>Wellness with Krystal</title>
     <style>
+      ul {
+      list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #b08968;
+          }
+          li {
+      float: left;
+      }
+
+        li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #9c6644;
+}
 
     
     body {
@@ -40,34 +62,12 @@
     <body>
 
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Wellness With Krystal</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/schedule.html">Schedule</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  More
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Enroll</a></li>
-                  <li><a class="dropdown-item" href="#">Contact</a></li>
-                  
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#enroll">Enroll</a></li>
+      </ul>
+      
 
       <br>
 
@@ -89,13 +89,34 @@
 <br>
 <br>
 
-    <h1>Our Story</h1>
 
-<div class="flex-container" id="flex-container">
-  <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-</div>
+
+    <div class="flex-container" id="flex-container">
+      <div class="header">
+        <h2>Our Story:</h2>
+  
+      <div>Lorem <b>Ipsum</b> is simply <em>dummy</em> text <br>of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's <br> standard dummy 
+      text ever since the 1500s, <br> when an unknown <i>printer</i> took a galley of type <br> and scrambled it to make a type <br>specimen book. It has survived not only five <br>
+      centuries, but <small>also</small> the leap into electronic <br> typesetting, remaining essentially unchanged. <br> 
+      </div>
+    </div>
+
+    <div class="header">
+      <h2>Contact Us:</h2>
+      <div><address>
+        Contact <a href="krystalwilliams864@gmail.com">Krystal</a>.<br> 
+        Visit us at:<br>
+        1234 Drive<br>
+        Box 564, Georgia<br>
+        USA
+        </address></div>
+      <div>3</div>
+    </div>
+    </div>
+
     
-<a href="./pages/schedule.html">schedule</a>  
+    
+<a href="./pages/enroll.html">enroll</a>  
    
 
 </body>
