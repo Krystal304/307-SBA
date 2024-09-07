@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Login</title>
     <style>
 /* nav bar */
@@ -37,8 +38,24 @@ li a:hover {
         text-decoration: none;
       }
       
-      
+    /* form style */
+      form {
+    text-align: center;
+    }
+
+
+    .main-form{
         
+        border: 5px solid #9c6644;
+        height: 200px;
+        width: 300px;
+        padding: 50px;
+        margin: 20px;
+
+       
+     }
+
+ 
     </style>
 
 </head>
@@ -54,14 +71,17 @@ li a:hover {
 <br>
 
       <!-- form  -->
+       
+    <form class="main-form">
+        <h3>User Login:</h3>
     <form action="/action_page.php">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="username:" style="text-align: center;"><br>
+        <label for="password">Password:</label><br>
+        <input type="text" id="password" name="password" placeholder="password:" style="text-align: center;"><br><br>
         <input type="submit" value="Submit">
       </form> 
-      
+    </form>
 
 
 
